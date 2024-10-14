@@ -29,7 +29,7 @@ function logar() {
         return response.json();
       })
       .then((data) => {
-        if (data.idusuario) {
+        if (data.tbusuario) {
           salvarLogin(data);
           window.location.href = "./questionario.html";
         }
