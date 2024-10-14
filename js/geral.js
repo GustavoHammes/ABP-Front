@@ -1,5 +1,5 @@
-const urlbase = "http://localhost:3030";
-//const urlbase = "https://abp-1dsm-server.onrender.com";
+//const urlbase = "http://localhost:3030";
+const urlbase = "https://abp-front-gut5.onrender.com/";
 // Variável usada para manter os dados do usuário logado
 // A função carregarLogin verifica se o usuário está logado e carrega na variável usuarioLogado
 let usuarioLogado = undefined;
@@ -21,5 +21,5 @@ function logout() {
 
 function login() {
   // Redireciona para a página de login
-  window.location.href = "./login.html";
+  window.location.href = "./login1.html";
 }
