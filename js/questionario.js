@@ -9,11 +9,6 @@ function exibirMail() {
 function listarQuestao() {
   // Verifica se o usuário está logado
   if (!usuarioLogado) {
-    // Esconde o botão de logout
-    document.getElementById("botao-logout").style.display = "none";
-    document.getElementById("saida").innerHTML =
-      "<p>O usuário não está logado. Clique para efetuar o <a href='./login1.html'>login</a>.</p>";
-  } else {
     // Configuração da requisição
     const url = `${urlbase}/questao`;
 
@@ -23,6 +18,7 @@ function listarQuestao() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ idusuario: usuarioLogado.idusuario }),
+      
     };
 
     // Submete a requisição
@@ -67,6 +63,11 @@ function listarQuestao() {
       .catch((error) => {
         console.error("Erro:", error);
       });
+  } else {
+     // Esconde o botão de logout
+     document.getElementById("botao-logout").style.display = "none";
+     document.getElementById("saida").innerHTML =
+       "<p>O usuário não está logado. Clique para efetuar o <a href='./login1.html'>login</a>.</p>";
   }
 }
 
