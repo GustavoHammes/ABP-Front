@@ -8,7 +8,7 @@ function exibirMail() {
 
 function listarQuestao() {
   // Verifica se o usuário está logado
-  if (!usuarioLogado) {
+  if (usuarioLogado) {
     // Configuração da requisição
     const url = `${urlbase}/questao`;
 
