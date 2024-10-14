@@ -12,7 +12,7 @@ function listarQuestao() {
     // Esconde o botão de logout
     document.getElementById("botao-logout").style.display = "none";
     document.getElementById("saida").innerHTML =
-      "<p>O usuário não está logado. Clique para efetuar o <a href='./login.html'>login</a>.</p>";
+      "<p>O usuário não está logado. Clique para efetuar o <a href='./login1.html'>login</a>.</p>";
   } else {
     // Configuração da requisição
     const url = `${urlbase}/questao`;
