@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,15 +6,16 @@
     <title>Login | Jornada Scrum</title>
     <script src="./js/geral.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/login1.js"></script>
     <script src="./js/cadastro.js"></script>
     <link rel="stylesheet" href="./css/login1.css">
 </head>
 <body>
     <header>
-        <h2 class="logo"><img class="logo" src="img/d8branco 1.png" alt="Logo da Jornada Scrum"></h2>
+        <h2 class="logo"><img class="logo" src="./img/d8branco 1.png" alt="Logo da Jornada Scrum"></h2>
         <nav class="navigation">
-            <a href="#">Início</a>
-            <a href="#">Sua Jornada</a>
+            <a href="./index.html">Início</a>
+            <a href="./questionario.html">Sua Jornada</a>
             <button class="btnlogin-popup">Login</button>
         </nav>
     </header>
@@ -31,8 +31,8 @@
                     <span class="icon">
                         <ion-icon name="mail-outline"></ion-icon>
                     </span>
-                    <input type="email" required>
-                    <label >Email</label>
+                    <input type="email" id="login-mail" required>
+                    <label for="login-mail">Email</label>
                 </div>
                 <!-- <div class="input-box">
                     <span class="icon">
@@ -46,12 +46,15 @@
                     Lembre de mim</label>
                     <a href="#">Esqueceu a senha?</a>
                 </div> -->
-                <button type="submit" class="btn" onclick="logar()">Entrar</button>
+                <button class="btn" onclick="logar()">Entrar</button>
                 <div class="login-register">
                     <p>Você é um novo explorador?
                         <a href="#" class="register-link">Cadastre-se</a> e tenha uma experiência completa!</p>
                     </p>
                 </div>
+                <div class="msg-erro">
+                    Mensagem de erro
+                  </div>
             </form>
         </div> 
 
@@ -96,7 +99,7 @@
         </div> 
 
     </div>
-    <script src="./js/login1.js"></script>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
