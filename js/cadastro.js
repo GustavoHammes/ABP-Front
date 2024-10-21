@@ -1,13 +1,13 @@
 function salvarUsuario() {
-  const mail = document.getElementById("mail").value.trim();
   const nome = document.getElementById("nome").value.trim();
+  const mail = document.getElementById("mail").value.trim();
 
-  if (!mail || mail.length == 0) {
-    alert("Forneça o e-mail");
-  } else if (!nome || nome.length == 0) {
+  if (!nome || nome.length == 0) {
     alert("Forneça o nome");
+  } else if (!mail || mail.length == 0) {
+    alert("Forneça o e-mail");
   } else {
-    const usuario = { mail, nome };
+    const usuario = { nome , mail };
 
     // Configuração da requisição
     const url = `${urlbase}/usuario`;
